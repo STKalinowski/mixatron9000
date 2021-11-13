@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+	<title>MixaTron 9000 MK1</title>
+	<meta charset="UTF-8">
+	<link rel='stylesheet' href='/stylesheets/style.css'></link>
+</head>
+
+<body>
+<form>
+	<h1>MixaTron 9000 MK1</h1>
+		
+	<div id='content'>
+		<div id='status-box'>
+			<h2>MixaTron 9000 MK1's Status</h2>
+			<div id='status'>
+			</div>
+		</div>
+		
+		<div id='left-box'>
+			<div id='modediv'>
+				<h2>Drink Selection</h2>
+				<p>Current drink mode is: <strong><span id="modeid"></span></strong></p>
+				<p>
+					<input type="button" id="modeNone"  value="None"/>
+					<input type="button" id="modeDrink1"  value="Drink 1"/>
+					<input type="button" id="modeDrink2"  value="Drink 2"/>
+					<input type="button" id="modeDrink3"  value="Drink 3"/>
+					<input type="button" id="modeDrink4"  value="Drink 4"/>
+				</p>
+				<h3>MixaTron 9000 MK1 Controls</h3>
+				<p>
+					<p>TODO: This can be implemented later</p>
+					<input type="button" id="stopButton" value="Stop"/>
+					<input type="button" id="goButton" value="Go"/>
+				</p>
+			</div>
+			
+		</div>
+		<div id='error-box'>
+			<h2>Server Error</h2>
+			<p>Server error detected. Please resolve error before continuing.</p>
+			<div><code id='error-text'>No error yet... did you hide this div correctly via Javascript? :)</code></div>
+		</div>
+
+	</div>
+</form>
+	
+	<script src='/socket.io/socket.io.js' type='text/javascript'></script>
+	<script src='http://code.jquery.com/jquery-1.11.1.min.js' type='text/javascript'></script>
+
+	<script src='javascripts/mixatron_ui.js' type='text/javascript'></script>
+</body>
+</html>
